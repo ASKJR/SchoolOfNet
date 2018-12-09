@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		n1 = prompt('Type number 1:')
+		n2 = prompt('Type number 2:')
+		op = prompt('Type arithmetic sign:')
+
+		n1 = parseFloat(n1)
+		n2 = parseFloat(n2)
+
+		if (isNaN(n1) || isNaN(n2)) {
+			throw new Error("Invalid numbers!")
+		}
+
+		if (op == '+') {
+			console.log(n1 + n2)
+		} else if (op == '-') {
+			console.log(n1 - n2)
+		} else if (op == '*') {
+			console.log(n1 * n2)
+		} else if (op == '/') {
+			console.log(n1 / n2)
+		} else {
+			console.error('Operation not found')
+		}
+
+	</script>
+</body>
+
+</html>

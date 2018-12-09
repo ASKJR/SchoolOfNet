@@ -1,0 +1,7 @@
+JS
+	*linaguagem script
+	*tipos básicos (caracteres,numeros, verdadeiro, e falso)
+	*tipagem dinâmica
+VARIÁVEIS
+
+	

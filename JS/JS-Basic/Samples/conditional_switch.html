@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        n1 = prompt('Type n1:')
+        n2 = prompt('Type n2:')
+        op = prompt('Type arithmetic operation:')
+
+        n1 = parseFloat(n1)
+        n2 = parseFloat(n2)
+
+        switch (op) {
+            case '+':
+                console.log(n1 + n2)
+                break
+            case '-':
+                console.log(n1 - n2)
+                break
+            case '/':
+                console.log(n1 / n2)
+                break
+            case '*':
+                console.log(n1 * n2)
+                break
+            default:
+                console.error('Operation not found');
+        }
+    </script>
+</body>
+
+</html>
