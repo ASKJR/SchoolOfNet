@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>OOP Javascript</p>
+    <script>
+        //constructor
+        function Person(_name, _age, _height) {
+
+            //private attributes
+            var name = _name;
+            var age = _age;
+            var height = _height;
+
+            //private function
+            function privateFunc() {
+                console.log('privateFunc');
+            }
+
+            //"this" means - public function
+            this.sayHello = function (name) {
+                return 'Hello ' + name;
+            }
+
+            this.hello = function (name) {
+                return 'Hello' + name;
+            }
+
+            //getters and setters
+
+            //getters
+            this.getName = function () {
+                return name;
+            }
+
+            this.getAge = function getAge() {
+                return age;
+            }
+
+            this.getHeight = function () {
+                return height;
+            }
+
+            //setters
+            this.setName = function (_name) {
+                name = _name;
+            }
+
+            this.setAge = function setAge(_age) {
+                age = _age;
+            }
+
+            this.setHeight = function (_height) {
+                height = _height;
+            }
+        }
+
+        //static methods and attributes
+
+        Person.staticMethod = function () {
+            return "I'm a static method";
+        }
+
+        Person.staticAttribute = "I'm a static attribute";
+
+        //Prototype funcions can be accessed by all instances of a class
+        Person.prototype.happyBirthday = function () {
+            this.setAge(this.getAge() + 1);
+        }
+
+        function Employee(_salary, _name, _age, _height) {
+            var salary = _salary;
+
+            //inheretence
+            Person.call(this, _name, _age, _height);
+
+            this.getSalary = function () {
+                return salary;
+            }
+
+            this.setSalary = function (_salary) {
+                salary = _salary;
+            }
+        }
+
+        Employee.prototype = Object.create(Person.prototype);
+
+        Employee.prototype.happyBirthday = function () {
+            this.setAge(this.getAge() + 2);
+        }
+
+
+        var e = new Employee('3500', 'Kato', 25, 1.85);
+        var p = new Person('Josua', 30, 1.90);
+
+
+
+        //constructor
+        //var p1 = new Person('Alberto Kato', 25, 1.85);
+        // p1.setName('Alberto Kato');
+        // p1.setAge(25);
+        // p1.setHeight(1.85);
+
+        //constructor
+        //var p2 = new Person('Sussumu', 28, 1.85);
+
+        // p2.setName('Sussumu');
+        // p2.setAge(28);
+        // p2.setHeight(1.85);
+
+        //access prototype
+        // console.log(p1.__proto__, Person.prototype);
+
+
+        // console.log(p1.sayHello('Person1'));
+        // console.log(p2.sayHello('Person2'));
+        // console.log(p1);
+        // console.log(p2);
+        // console.log(Person.staticAttribute, Person.staticMethod())
+
+    </script>
+</body>
+
+</html>
