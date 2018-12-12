@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let objects = [{ name: 'arror', 'qty': 12 }, { name: 'abacaxi', 'qty': 12 }, { name: 'peixe', 'qty': 12 }]
+
+        let hello = (name = 'User') => `Hello ${name}`;
+
+        let formatTitle = title => {
+            title = title.toLowerCase();
+            title = title.charAt(0).toUpperCase() + title.slice(1);
+            return title;
+        }
+
+        let letters = [];
+        for (let obj of objects) {
+            let name = formatTitle(obj.name);
+            obj.name = name;
+            arrayLettersName = [...name];
+            letters.push(...arrayLettersName);
+        }
+
+        console.log(objects);
+
+        console.log(letters);
+
+
+
+    </script>
+</body>
+
+</html>
