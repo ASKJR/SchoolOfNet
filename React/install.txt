@@ -4,3 +4,6 @@
 
 /// installing material ui ///
 1) npm install @material-ui/core --save
+
+/// eject dependencies ///
+1) npm run eject
