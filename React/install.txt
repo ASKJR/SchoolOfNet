@@ -1,3 +1,6 @@
 1) npm install -g create-react-app //instaling package
 2) create-react-app nameProject //creating react project.
 3) npm start //start server
+
+/// installing material ui ///
+1) npm install @material-ui/core --save
