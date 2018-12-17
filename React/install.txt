@@ -7,3 +7,6 @@
 
 /// eject dependencies ///
 1) npm run eject
+
+/// installing redux - reac ///
+1) npm install redux react-redux --save
