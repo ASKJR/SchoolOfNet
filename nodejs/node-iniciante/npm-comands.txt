@@ -1,0 +1,22 @@
+/// in order to create package.json ///
+npm init
+
+/// excute node ///
+node fileName.js
+
+/// install an external module and refece in package.json ///
+npm i sweetalert2 --save-dev  -> -dev optional
+
+/// install dependencies ///
+npm install
+
+/// uninstall package ///
+npm uninstall sweetalert2 --save-dev
+
+/// update package ///
+*same as install or:
+npm update packageName --save-dev 
+
+/// publishing npm ///
+1) npm adduser
+2) npm publish

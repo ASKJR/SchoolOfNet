@@ -1,0 +1,21 @@
+{
+  "name": "node-iniciante",
+  "version": "1.0.0",
+  "description": "learning node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learning",
+    "is",
+    "FUN"
+  ],
+  "author": "Alberto Kato",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "pokemon": "^1.2.3",
+    "websocket": "^1.0.28"
+  }
+}

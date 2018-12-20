@@ -1,0 +1,11 @@
+<script>
+    const socket = new WebSocket('ws://localhost:3000');
+    socket.onopen = () => {
+        socket.send('Im onpen from client');
+    }
+
+    socket.onmessage = (message) => console.log(message);
+
+    socket.onerror = (err) => console.log(err);
+
+</script>
