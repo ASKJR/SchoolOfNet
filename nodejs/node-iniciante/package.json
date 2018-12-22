@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "banned-passwords": "^1.0.0",
     "pokemon": "^1.2.3",
     "websocket": "^1.0.28"
   }
