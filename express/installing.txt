@@ -1,0 +1,6 @@
+/// Boilerplate - express/generator - globally ///
+npm install express-generator -g
+
+/// Create project w/ boilerplate ///
+1) express myApp
+2) npm install (installing all dependencies)
