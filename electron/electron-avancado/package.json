@@ -1,0 +1,37 @@
+{
+    "name": "electron-avancado",
+    "version": "1.0.0",
+    "description": "electron app course",
+    "main": "main.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=development electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "electron",
+        "app"
+    ],
+    "author": "Alberto Kato <albertokatojr@gmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "electron": "^4.0.0",
+        "electron-builder": "^20.38.4",
+        "electron-reload": "^1.4.0"
+    },
+    "dependencies": {
+        "dotenv": "^6.2.0",
+        "mousetrap": "^1.6.2"
+    },
+    "build": {
+        "appId": "app-electron",
+        "productName": "Kato-electron",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "icon": "tray.png",
+            "target": "nsis"
+        }
+    }
+}
